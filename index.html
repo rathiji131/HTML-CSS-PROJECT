@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube</title>
+  <link rel=”icon” type=”image/ico” href="yt_title.png" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <a href="#">
+      <img src="yt.png" alt="YouTube Logo" class="youtube-logo" />
+    </a>
+    <form class="search-bar">
+      <input class="search-input" type="search" placeholder="Search" aria-label="Search" />
+      <button type="submit" class="search-btn">
+        <img src="magnify.svg" />
+      </button>
+    </form>
+    <div class="menu-icons">
+      <a href="#">
+        <img src="video-plus.svg" alt="Upload Video" />
+      </a>
+      <a href="#">
+        <img src="apps.svg" alt="Apps" />
+      </a>
+      <a href="#">
+        <img src="bell.svg" alt="Notifications" />
+      </a>
+      <a href="#">
+        <img class="menu-channel-icon" src="self.jpg.jpeg" alt="Your Channel" />
+      </a>
+    </div>
+  </header>
+
+
+  <!-- <div class="col sm-5">
+    <div class="dropdown">
+      <button class="dropbtn" aria-placeholder="search here" style="border: 1px solid black; width:200px;"  >search here....</button>
+      <div class="dropdown-content">
+        <p onclick="teri_ankho()">Teri Ankho me | Darshan Raval | aishwarya | Rashmi Virag |Radhika Rao| Vinay Sapru | Siddharth</p>
+        <p onclick="asal_me()">Asal me | Dhvani Bhanushali | madhusudan | Rashmi Virag |Radhika Rao| Vinay Sapru | Siddharth</p>
+      </div>
+    </div> -->
+
+
+  <div class="container" id="contain">
+    <div class="row" style="display: inline-flex; ">
+      <div class="col-10">
+        <video id="vedio" poster="vail.jpg" width="100%" height="400px" controls="controls" class="img-fluid">
+          <source src="InTimeTec Session 37.mp4" type="video/mp4" aria-controls="full">
+        </video>
+        <p id="vedio_heading">
+          <b> Ek Tarfa - Darshan Raval Official Music Video Romantic Song 2020 Indie Music Label.mp3. Za kriya</b><br>
+        <div id = "view_svg">
+          <p id="views">7,403,112 views Nov 15 , 2017 </p>
+
+        <div class="like">
+          <p>
+            <!-- <img src="./SVGS/like.svg" alt="like" /> -->
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+              style="pointer-events: none; display: block; width: 30px; height: 30px;">
+             <g class="style-scope yt-icon">
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"
+                  class="style-scope yt-icon"></path>
+              </g>
+            </svg>
+            <span>123</span>
+          </p>
+          <p>
+            <!-- <img src="unlike.svg" alt="unlike" /> -->
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+              style="pointer-events: none; display: block; width: 30px; height: 30px;">
+              <g class="style-scope yt-icon">
+                <path
+                  d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"
+                  class="style-scope yt-icon"></path>
+              </g>
+            </svg>
+            <span>123</span>
+
+          </p>
+          <p>
+            <!-- <img src="forword.svg" alt="forword" /> -->
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+              style="pointer-events: none; display: block; width: 30px; height: 30px;">
+              <g mirror-in-rtl="" class="style-scope yt-icon">
+                <path d="M14 9V3L22 12L14 21V15C8.44 15 4.78 17.03 2 21C3.11 15.33 6.22 10.13 14 9Z"
+                  class="style-scope yt-icon"></path>
+              </g>
+            </svg>
+            <span>share</span>
+          </p>
+          <p id="save">
+            <!-- <img src="save.svg" alt="save" /> -->
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+              style="pointer-events: none; display: block; width: 30px; height: 30px;">
+              <g class="style-scope yt-icon">
+                <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"
+                  class="style-scope yt-icon"></path>
+              </g>
+            </svg>
+            <span>Save</span>
+          </p>
+        </div>
+      </div>
+        
+        <hr>
+        <div id="ved_info" style="display: flex;">
+          <img src="T-series.png" id="t-logo">
+          <span ><b>T- series Apna Panjab</b></span>
+        </div>
+        <button id="btn-subs" onclick="subscribe()">Subscribe</button>
+        <div style="padding-left: 50px; padding-top: 20px; padding-right: 30px;">
+          Presenting latest punjabi song Motti Motti Akh sung by Shivjot Ft Gurlej Akhtar while music and lyrics are given by Shivjot himself. Enjoy and stay connected with us !!  
+         
+        </div>
+        <hr>
+        743436 Comments
+        <div>
+          <img src="self.jpg.jpeg" class="menu-channel-icon">
+          Madhusudan Rathi <br>
+          Fun fact - Song comes on 29 feb 2020 and yesterday 28 feb 2021 today 1 march 2021 there is no 29feb in 2021 but this song 1 year old today 1 march 2021😆😆😅
+Very very nice song amazing
+        </div>
+        </div>
+      <hr>
+
+
+      <div class="col">
+        <div class="col-2" style="display: inline-flex; padding-left: 20px;">
+          <div class="col-2">
+            <img src="teri_ankho.png" id="left-icon" onclick="teri_ankho()">
+          </div>
+
+          <div class="col-2" style="height: auto; width: 200px;">
+            <p><b>Teri Ankho me | Darshan Raval | aishwarya | Rashmi Virag |Radhika Rao| Vinay Sapru | Siddharth</b></p>
+            <div id="views">5M views.
+              <span class="uploaded">1 Year ago</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col-4" id="side-icons">
+            <div class="col-2">
+              <img src="tere_naal.png" width="250px" height="150px" onclick="tere_naal()">
+            </div>
+
+            <div class="col-2" style="height: auto; width: 200px;">
+              <p><b>Tere naal | Darshan Raval | aishwarya | Rashmi Virag |Radhika Rao| Vinay Sapru | Siddharth</b></p>
+              <div id="views">6M views.
+                <span class="uploaded">5 Year ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="col-4" id="side-icons">
+              <div class="col-2">
+                <img src="ek_tarfa.png" width="250px" height="150px" onclick="ek_tarfa()">
+              </div>
+
+              <div class="col-2" style="height: auto; width: 200px;">
+                <p><b>Ek tarfa | Darshan Raval | aishwarya | Rashmi Virag |Radhika Rao| Vinay Sapru | Siddharth</b></p>
+                <div id="views">3M views.
+                  <span class="uploaded">10 Year ago</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="col-4" id="side-icons">
+                <div class="col-2">
+                  <img src="leja_re.png" width="250px" height="150px" onclick="leja_re()" class="img-fluid">
+                </div>
+
+                <div class="col-2" style="height: auto; width: 200px;">
+                  <p><b>Leja re | Darshan Raval | aishwarya | Rashmi Virag |Radhika Rao| Vinay Sapru | Siddharth</b></p>
+                  <div id="views">10M views.
+                    <span class="uploaded">13 Year ago</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4" id="side-icons">
+                <div class="col-2">
+                  <img src="asal_me.png" width="250px" height="150px" onclick="asal_me()">
+                </div>
+
+                <div class="col-2" style="height: auto; width: 200px;">
+                  <p><b>Asal me | Dhvani Bhanushali | madhusudan | Rashmi Virag |Radhika Rao| Vinay Sapru | Siddharth</b></p>
+                  <div id="views">5M views.
+                    <span class="uploaded">6 Year ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+<script>
+
+  // var request = new XMLHttpRequest();
+  // request.open('GET', 'https://ghibliapi.herokuapp.com/films', 'true')
+  // request.onload = function () {
+  //   var data = JSON.parse(this.response)
+  //   data.forEach((moive) => {
+  //     date = moive.release_date;
+  //     // document.write(moive.release_date)
+  //     document.createElement("p").innerHTML = date;
+  //     document.getElementById("p") == 'none';
+  //   })
+
+  // }
+  // request.send()
+
+  // var count = 0 ;
+  // var request = new XMLHttpRequest();
+  // request.open('GET', 'https://ghibliapi.herokuapp.com/films', 'true')
+  // request.onload = function () {
+
+  //   var name = ["fname" , "sname" , "tname" , "fname"];
+  //   var comment = ["fcomm" , "scomm" , "tcomm" ,"fcomm"];
+  //   var data = JSON.parse(this.response);
+  //   for(var i = 0 ; i < name.length ; i++)
+  //   {
+  //     document.getElementById("name[i]").innerHTML = data[i].director;
+  //     document.getElementById("comment[i]").innerHTML = data[i].description;
+  //     count++;
+  //   }
+    
+  //   document.getElementById("numberOfComments").innerHTML = count;
+  // }
+  // request.send();
+
+
+
+  function teri_ankho() {
+    var name = "Teri ankho : Gippy Grewal Ft. Amrit Maan (Full vedio) Latest Panjabi song"
+    document.getElementById("vedio").poster = "teri_ankho.png";
+    document.getElementById("vedio_heading").innerHTML = name
+  }
+
+  function asal_me() {
+    var name = "Asal_me : Gippy Grewal Ft. Amrit Maan (Full vedio) Latest Panjabi song"
+    document.getElementById("vedio").poster = "asal_me.png";
+    document.getElementById("vedio_heading").innerHTML = name
+  }
+
+  function tere_naal() {
+    var name = "Tere_naal : Gippy Grewal Ft. Amrit Maan (Full vedio) Latest Panjabi song"
+    document.getElementById("vedio").poster = "tere_naal.png";
+    document.getElementById("vedio_heading").innerHTML = name
+  }
+
+  function ek_tarfa() {
+    var name = "Ek tarfa : Gippy Grewal Ft. Amrit Maan (Full vedio) Latest Panjabi song"
+    document.getElementById("vedio").poster = "ek_tarfa.png";
+    document.getElementById("vedio_heading").innerHTML = name
+  }
+
+  function leja_re() {
+    var name = "Leja re : Gippy Grewal Ft. Amrit Maan (Full vedio) Latest Panjabi song"
+    document.getElementById("vedio").poster = "leja_re.png";
+    document.getElementById("vedio_heading").innerHTML = name
+  }
+
+  function subscribe()
+  {
+      alert("You subscribed to this channel");
+  }
+
+</script>
+
+</html>

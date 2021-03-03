@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid" style="border: 1px solid black; height: 500px;">
+        <div class="row" style="border: 1px solid red;">
+            <div class="col-md-4  col-8" style="border:1px solid blue;">
+                <img src="self.jpg.jpeg" width="100px">
+            </div>
+            <div class="col-8" style="border:1px solid blue; height: 100px;">
+                <div class="row" style="border: 1px solid pink;height: 80px;">
+                    <div class="col-xl-4 col-md-6 col-sm-8 col-12  d-md-none d-sm-block  d-block" style="border: 1px solid greenyellow ;">
+                           <p id="naveen"> Naveen -4 </p>
+                           <button type="button" onclick="display()">change name</button>
+                    </div>
+                    <div class="col-xl-8 col-md-6 col-sm-4 col-12 d-md-block d-sm-block  d-none" style="border: 1px solid orange;">
+                         <p id="yashasvi" > yashasvi - 8 </p>
+                         <button type="button" onclick="color()">change color</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none;  display: block; width: 100px; height: 100px; opacity:0.1 "><g class="style-scope yt-icon"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z" class="style-scope yt-icon"></path></g></svg>
+
+
+    <input type="button" value="shri" id="btn" onclick="change_button_value()">
+    <script>
+        function display()
+        {
+            document.getElementById("naveen").innerHTML="Madhusudan"
+        }
+
+        function color()
+        {
+            // document.getElementById("yashasvi").style.color="pink";
+            if(document.getElementById("yashasvi").style.color == "black")
+            {
+                document.getElementById("yashasvi").style.color="green"
+            }
+            else
+            document.getElementById("yashasvi").style.color="black"
+        }
+
+        function change_button_value()
+        {
+           // document.getElementById("btn").value="123";
+            if(document.getElementById("btn").value == "shri")
+            {
+                document.getElementById("btn").value ="123"
+            }
+            else
+            document.getElementById("btn").value ="shri"
+        }
+    </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
